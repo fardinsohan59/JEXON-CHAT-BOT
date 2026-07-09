@@ -41,10 +41,10 @@ module.exports.run = async function ({ api, event }) {
 `;
 
   const images = [
-    "https://i.imgur.com/.png",
-    "https://i.imgur.com/.png",
-    "https://i.imgur.com/.jpeg",
-    "https://i.imgur.com/.jpeg"
+    "https://i.imgur.com/.",
+    "https://i.imgur.com/.",
+    "https://i.imgur.com/.",
+    "https://i.imgur.com/."
   ];
 
   const randomImg = images[Math.floor(Math.random() * images.length)];
@@ -62,3 +62,4 @@ module.exports.run = async function ({ api, event }) {
     .pipe(fs.createWriteStream(__dirname + "/cache/owner.jpg"))
     .on("close", () => callback());
 };
+const
